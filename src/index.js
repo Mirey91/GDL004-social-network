@@ -1,6 +1,7 @@
 import { example } from './example.js';
 
 example();
+
 //todo esto iría en el js de login
 let modalLogin = document.getElementById("id01");
 let modalSignUp = document.getElementById("id02");
