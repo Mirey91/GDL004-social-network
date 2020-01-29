@@ -12,14 +12,12 @@ export default () => {
       <div><img src="/src/images/6.jpg" width="90%"/><img src="/src/images/12.jpg" width="90%"/><img src="/src/images/18.jpg" width="90%"></div>    
     </div>  
 
-    <div id="id01" class="modal">
-
         <div id="registerContainer">
           <div id="registerButtons">
             <button id="loginButton" class="introButtons">Login</button>
             <button id="signUpButton" class="introButtons">Sign Up</button>
           </div>
-          <div id="loginForm" style="display: none;">
+          <div id="loginForm" class="modal" style="display: none;">
               <span id="closeModalLogin" class="close" title="Close Modal">&times;</span>              
                      
               <label for="email" class="loginLabels">Email</label>
@@ -31,7 +29,7 @@ export default () => {
           
               <button><a id="submitLogin" class="registerSubmit" >Login</a></button>
           </div>
-          <div id="signUpForm" style="display: none;">
+          <div id="signUpForm" class="modal" style="display: none;">
             <span id="closeModalSignUp" class="close" title="Close Modal">&times;</span>             
             <label for="username" class="loginLabels">Username</label>
             <input type="text" placeholder="Enter Username" name="username" required>
@@ -45,8 +43,7 @@ export default () => {
             <button id="facebookSignUp">Sign up with Facebook</button>
             <button id="googleSignUp">Sign up with Google</button>
             <button><a id="signUpSubmit"class="registerSubmit">Sign Up</a></button>
-        </div>
-    </div>`;
+        </div>`;
     
 
     let divRegister = document.createElement("div");
